@@ -41,7 +41,7 @@ sudo apt-get -y install ansible
 sudo cat /etc/ansible/hosts
 ```
 ## Update host file
-
+```bash
 [server]
 server1 ansible_host=PUBLIC IP ADDRESS
 server2 ansible_host=PUBLIC IP ADDRESS
@@ -51,5 +51,5 @@ server3 ansible_host=PUBLIC IP ADDRESS
 ansible_python_interpreter=/usr/bin/python3
 ansible_user=ubuntu
 ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-tutorial/ansible-server-key.pem
-
+```
 
