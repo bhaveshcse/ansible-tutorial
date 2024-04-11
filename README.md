@@ -79,5 +79,5 @@ file: showdate-playbook.yml
 # Run ansible playbook
 
 ```bash
-$ sudo ansible-playbook -v nginx-playbook.yml
+$ sudo ansible-playbook -v showdate-playbook.yml
 ```
