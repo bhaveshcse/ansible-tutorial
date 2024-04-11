@@ -54,5 +54,8 @@ ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-tutorial/ansible-server-k
 ```
 
 ## ping to all server
+"-m": module
+"-a": ad-hoc command
 ```bash
 $ sudo ansible all -m ping
+```
