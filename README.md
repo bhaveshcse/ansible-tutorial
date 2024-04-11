@@ -63,3 +63,21 @@ $ sudo ansible all -m ping
 ```bash
 $ sudo ansible all -a "uptime"
 ```
+
+# Ansible Playbook 
+file: showdate-playbook.yml
+```bash
+-
+ name: Dates playbook
+ hosts: servers
+ tasks: 
+  - name: show date
+    command: date
+  - name: show update
+    command: uptime     
+```
+# Run ansible playbook
+
+```bash
+$ sudo ansible-playbook -v nginx-playbook.yml
+```
