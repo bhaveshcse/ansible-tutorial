@@ -55,4 +55,4 @@ ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-tutorial/ansible-server-k
 
 ## ping to all server
 ```bash
-$ sudo ansible -m ping
+$ sudo ansible all -m ping
