@@ -35,9 +35,10 @@ sudo apt install software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt-get -y install ansible
 ```
-## Configure Ansible
+## Show Ansible configuration
 
 ```bash
 sudo cat /etc/ansible/hosts
 ```
+
 
