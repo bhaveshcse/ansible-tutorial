@@ -59,3 +59,7 @@ ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-tutorial/ansible-server-k
 ```bash
 $ sudo ansible all -m ping
 ```
+## Display uptime of servers
+```bash
+$ sudo ansible all -a "uptime"
+```
