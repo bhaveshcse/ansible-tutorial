@@ -81,3 +81,31 @@ file: showdate-playbook.yml
 ```bash
 $ sudo ansible-playbook -v showdate-playbook.yml
 ```
+
+# Install Nginx web server and copy web page 
+file: nginx_install_play.yml
+```bash
+-
+ name: Install nginx 
+ become: yes
+ hosts: servers
+ tasks:
+   - name: Nginx setup 
+     apt:
+       name: nginx
+       state: latest
+
+   - name: Start Nginx service
+     service:
+       name: nginx
+       state: started
+       enabled: yes 
+
+   - name: Copy index.html file to Nginx server
+
+     copy: 
+      src: index.html
+      dest: /usr/share/ngnix/html/
+      mode: '0644'
+     notify: restart nginx
+```
